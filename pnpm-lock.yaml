@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@preact/signals-react': ^1.2.2
   '@types/react': ^18.0.28
   esbuild: 0.17.3
   immer: ^9.0.19
@@ -8,14 +9,17 @@ specifiers:
   react: ^18.2.0
   react-dom: ^18.2.0
   react-router: ^6.9.0
+  vyce: ^0.12.1
   zustand: ^4.3.6
 
 dependencies:
+  '@preact/signals-react': 1.2.2_react@18.2.0
   immer: 9.0.19
   jotai: 2.0.3_react@18.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-router: 6.9.0_react@18.2.0
+  vyce: 0.12.1
   zustand: 4.3.6_immer@9.0.19+react@18.2.0
 
 devDependencies:
@@ -222,6 +226,20 @@ packages:
     dev: true
     optional: true
 
+  /@preact/signals-core/1.2.3:
+    resolution: {integrity: sha512-Kui4p7PMcEQevBgsTO0JBo3gyQ88Q3qzEvsVCuSp11t0JcN4DmGCTJcGRVSCq7Bn7lGxJBO+57jNSzDoDJ+QmA==}
+    dev: false
+
+  /@preact/signals-react/1.2.2_react@18.2.0:
+    resolution: {integrity: sha512-GoESQ9n1bns2FD+8yqH7lBvQMavboKLCNEW+s0hs3Wcp5B1VHvVxwJo6aFs6rpxoh1/q8Tvwbi4vIeehBD2mzA==}
+    peerDependencies:
+      react: 17.x || 18.x
+    dependencies:
+      '@preact/signals-core': 1.2.3
+      react: 18.2.0
+      use-sync-external-store: 1.2.0_react@18.2.0
+    dev: false
+
   /@remix-run/router/1.4.0:
     resolution: {integrity: sha512-BJ9SxXux8zAg991UmT8slpwpsd31K1dHHbD3Ba4VzD+liLQ4WAMSxQp2d2ZPRPfN0jN2NPRowcSSoM7lCaF08Q==}
     engines: {node: '>=14'}
@@ -343,6 +361,11 @@ packages:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
       react: 18.2.0
+    dev: false
+
+  /vyce/0.12.1:
+    resolution: {integrity: sha512-HzPoNrr8Gg2DBXPTmBuN7mGmin8jKGQL6hQ7HQPZDtTHTXsxHtwGt2We5unEld1gZjtuN/qI18e2v5r596FhRA==}
+    engines: {node: '>=12.x'}
     dev: false
 
   /zustand/4.3.6_immer@9.0.19+react@18.2.0:

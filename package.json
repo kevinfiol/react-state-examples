@@ -5,11 +5,13 @@
         "dev": "node build.js -d"
     },
     "dependencies": {
+        "@preact/signals-react": "^1.2.2",
         "immer": "^9.0.19",
         "jotai": "^2.0.3",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-router": "^6.9.0",
+        "vyce": "^0.12.1",
         "zustand": "^4.3.6"
     },
     "devDependencies": {
